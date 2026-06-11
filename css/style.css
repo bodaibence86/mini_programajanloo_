@@ -1,8 +1,79 @@
-.line {
-    width: 30%;
-    height: 3px;
+/* Globális sötét stílus és betűtípus */
+body {
+    background-color: #0b071e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Egyedi sötét háttér a navigációnak */
+.bg-dark-custom {
+    background-color: rgba(11, 7, 30, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* Lila neon elválasztó vonal */
+.border-purple {
+    border-color: #bc3df4 !important;
+    box-shadow: 0px 2px 15px rgba(188, 61, 244, 0.3);
+}
+
+/* Logó és kiemelések neon színe */
+.text-neon {
+    color: #bc3df4;
+    text-shadow: 0 0 10px rgba(188, 61, 244, 0.8);
+}
+
+.tech-logo {
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+/* Menüpontok stílusa hover effektusra */
+.navbar-nav .nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+    color: #bc3df4 !important;
+}
+
+/* Hero szekció a beküldött képpel */
+.hero-section {
+    position: relative;
+    min-height: 85vh;
+    /* Háttérképként beállítva a megadott hangulatos gamer setup fotó */
+    background-image: linear-gradient(to right, rgba(11, 7, 30, 0.9) 30%, rgba(11, 7, 30, 0.4) 100%), 
+                      url('https://unsplash.com'); /* Ideiglenes link, cseréld le a saját képed elérésére, ha lokálisan használod pl: url('kepernyokep.jpg') */
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+/* Főcím stílusa neon ragyogással */
+.main-title {
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.description-text {
+    color: #d1cedb;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+/* Egyedi Neon Gomb */
+.btn-neon {
     background-color: #bc3df4;
-    margin-right: 30%;
-    margin-left: 0;
-    margin-bottom: 2%;
+    color: #fff;
+    border: 2px solid #bc3df4;
+    box-shadow: 0 0 15px rgba(188, 61, 244, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-neon:hover {
+    background-color: transparent;
+    color: #bc3df4;
+    box-shadow: 0 0 25px rgba(188, 61, 244, 0.8);
+}
+
+.btn-outline-light:hover {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }
