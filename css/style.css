@@ -65,3 +65,15 @@ body {
 .btn-outline-light:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }
+
+.txt-w{
+    color: #fff;
+}
+.txt-h1 {
+    font-weight: 1000;
+    font-size: 36px;
+}
+
+.btn-custom-purple {
+    background-color: #bc3df4;
+}
