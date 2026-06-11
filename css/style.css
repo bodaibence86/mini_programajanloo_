@@ -65,3 +65,17 @@ body {
 .btn-outline-light:hover {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }
+
+.line3 {
+    width: 40%;
+    height: 2px;
+    background-color: #bc3df4;
+    margin-right: 30%;
+    margin-left: 0;
+    margin-bottom: 2%;
+}
+
+.bg-dark-purple {
+    background-color: rgba(31, 1, 51, 0.95);
+    backdrop-filter: blur(10px);
+}
